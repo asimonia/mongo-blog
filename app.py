@@ -7,3 +7,5 @@ post = Post(blog_id='123',
 			title='Another great post',
 			content='This is some sample content',
 			author='Alex')
+
+post.save_to_mongo()
