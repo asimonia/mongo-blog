@@ -1,11 +1,8 @@
 from database import Database
-from models.post import Post
+from menu import Menu
 
 Database.initialize()
 
-post = Post(blog_id='123',
-			title='Another great post',
-			content='This is some sample content',
-			author='Alex')
+menu = Menu()
 
-post.save_to_mongo()
+menu.run_menu()
