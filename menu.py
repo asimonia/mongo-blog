@@ -34,6 +34,8 @@ class Menu:
 			self._list_blogs()
 			self._view_blog()
 			pass
+		elif read_or_write == 'W':
+			self.user_blog.new_post()
 		else:
 			print("Thank you for blogging!")
 
